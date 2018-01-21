@@ -2,8 +2,34 @@ body {
    /* font-family: "abril-fatface", "Ostrich Sans Rounded Medium", "Ostrich Sans", "Ostrich Sans Black", "Ostrich Sans Bold", "Ostrich Sans Medium", "Ostrich Sans Light", "Ostrich Sans Heavy"; */
    margin: 0;
    padding: 0;
+   background: #181818;
    
 }
 .container {
-
+   margin: auto;
+   background: #888;
 }
+.grid {
+   display: grid;
+}
+.main-img img, .imgs img {
+   width: 100%;
+}
+
+/* LARGE SCREENS */
+@media(min-width:550px){
+   .container {
+      max-width: 850px;
+   }
+   .main-img {
+      visibility: visible;
+   }
+   .imgs{
+     grid-template-columns: repeat(5, 1fr); 
+     grid-template-rows: auto;
+     grid-gap: 1px;
+   }
+
+      
+}
+
