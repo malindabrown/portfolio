@@ -1,10 +1,49 @@
 body {
-   font-family: "abril-fatface", "Ostrich Sans Rounded Medium", "Ostrich Sans", "Ostrich Sans Black", "Ostrich Sans Bold", "Ostrich Sans Medium", "Ostrich Sans Light", "Ostrich Sans Heavy"; 
+   font-family: "Ostrich Sans Rounded Medium", "Ostrich Sans";
+   margin: 0;
+   padding: 30px;
+}
+h1, h2, h3 {
    margin: 0;
    padding: 0;
-   color: pink;
+}
+p {
+   margin: 0;
+   padding: 0;
+}
+.grid{
+   display: grid;
+}
+img {
+   display: block;
+   width: 100%;
+   height: auto;
 }
 
-.container {
+#showcase{
+
+}
+#main{
+
+}
+section{
+
+}
+section-a {
+
+}
+section-b {
+   
+}
+section-c {
+   
+}
+section-d {
+   
+}
+footer {
+
+}
+footer #main-footer {
 
 }

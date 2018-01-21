@@ -16,12 +16,11 @@ function imageClick(e){
    current.src = e.target.src;
 
    // Add Fade-in Class
-   current.classList.add('fade-in');
+   current.classList.add('fade-in', 2000);
 
    // Remove Fade-In Class after .5 seconds
    setTimeout(() => current.classList.remove('fade-in'), 500);
 
    // Change the opacity to opacity var
    e.target.style.opacity = opacity;
-   
 }
