@@ -6,12 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
+
+    <style>
+    body {
+    margin: 0 auto;
+    padding: 0;
+}
+box-sizing
+p {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(300px, auto);
+    padding: 0 5vw;
+}
+.red {
+    background-color: red;
+}
+.section {
+    display: grid;
+    grid-template-rows: minmax(80px, auto);
+    border: 1px dotted magenta;
+}
+.border {
+    display: grid;
+    border: 1px dotted black;
+    padding: 2.75vw;
+    min-height: 15vh;
+}
+.nested {
+    display: grid;
+}
+.nested-1 {
+    display: grid;
+    grid-template-columns: .5fr 2.5fr 1fr;
+}
+.nested-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.gallery-row-one {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.gallery-row-two {
+    grid-template-columns: 1.5fr 1fr 1fr;
+}
+img {
+    min-height: 100px;
+    min-width: 100px;
+    border: 0.25px dotted black;
+}
+button {
+    border-radius: 0;
+    border: 1px dotted black;
+    padding: 5px;
+    background-color:rgba(47, 79, 79, 0);
+    align-items: center;
+    }
+    </style>
 </head>
 <body>
+        <h1>Portfolio Page</h1>
+        <h2><a href"index.html"></a> <a href="portfolio.html">Portfolio Grid</a> <a href="other.html">Other Stuff</a></h2>
+             
 <div id="container">
-        <h1><a href"#">Malinda Brown</a></h1>
-        <h2><a href="portfolio.html">Portfolio Grid</a> <a href="other.html">Other Stuff</a></h2>
-     
     <div class="section">
         <div class="nested">
             <div class="nested-1 border">
