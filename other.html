@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<style>
+	.wrapper {
+	margin: 2em;;
+	font-family: "abril-fatface", "Ostrich Sans Rounded Medium", "Ostrich Sans", "Ostrich Sans Black", "Ostrich Sans Bold", "Ostrich Sans Medium", "Ostrich Sans Light", "Ostrich Sans Heavy"; 
+	font-size: 2em;
+	display: grid;
+	grid-gap: 0.5em;
+	grid-auto-rows: minmax(100px, auto);
+	overflow:hidden;
+	}
+
+	.wrapper > div{
+		padding: 1em;
+		background: rgba(126,110,127,.70);
+		color:#ebebeb;
+	}
+	div > .box{
+		border: 10px gold solid;
+		
+		
+	}
+	div > .box1 {grid-column: 1/4; grid-row: 1/3;}
+	div > .box2 {grid-row:2/4;}
+	div > .box3 {grid-row: 4/2;}	
+	div > .box4 {grid-column: 2/2; grid-row: 3/6;}
+
+	
+</style>
+
+<body>
+	<div class="wrapper">
+		<div class="box box1">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nemo odit. Eaque mollitia ad debitis fugit.</div>
+		<div class="box box2">2 Eaque mollitia ad debitis fugit.</div>
+		<div class="box box3">3 Lorem ipsum dolor sit amet, consectetur adipisicing</div>
+		<div class="box box4">4 Lorem ipsum dolor sit amet, consectetur adipisicing</div>
+		<div class="box box5">5 Eaque mollitia ad debitis fugit.</div>
+		<div class="box box6">6 Malinda</div>
+		<div class="box box7">7 Lorem ipsum dolor sit amet, consectetur adipisicing</div>
+		<div class="box box8">8 Eaque mollitia ad debitis fugit.</div>
+		<div class="box box9">9 Lorem Lorem  amet, consectetur adipisicing</div>
+	</div>
+</body>
+</html>
