@@ -1,15 +1,33 @@
 body {
-   font-family: "Ostrich Sans Rounded Medium", "Ostrich Sans";
+   font-family: "verdana";
+   background: #181818;
+   color: #dcdcdc;
+   font-size: 1.0em;
+   line-height: 1.5em;
+   text-align: center;
    margin: 0;
-   padding: 30px;
 }
 h1, h2, h3 {
    margin: 0;
-   padding: 0;
+   padding: 1em 0;
 }
 p {
    margin: 0;
-   padding: 0;
+   padding: 1em 0;
+}
+.btn {
+   display: inline-block;
+   background: #333;
+   color: #fff;
+   text-decoration:none;
+   padding: 1em 2em;
+   border: #666 dotted 1px;
+   margin: .5em 0;
+}
+.btn:hover{
+   color: #333;
+   background: #eaeaea;
+
 }
 .grid{
    display: grid;
@@ -20,30 +38,107 @@ img {
    height: auto;
 }
 
+/*  Header showcase */
 #showcase{
+   position: relative;
+   min-height: 450px;
+   color: #fff;
+   text-align: center;
+}
+#showcase .bg-image {
+   position: absolute;
+   background: #181818;
+   background-image: url("https://images.pexels.com/photos/35178/switzerland-zermatt-mountains-snow.jpg?h=350&auto=compress&cs=tinysrgb");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 450px;
+   opacity: 0.4;
+   z-index: -1;
+}
+#showcase h1 {
+   padding-top: 100px;
+   padding-bottom: 0;
+}
+#showcase .content-wrap,
+#section-a .content-wrap {
+   padding: 0 1.5em;
+}
+#section-a {
+   background: #eaeaea;
+   color: #333;
+   padding: 2em;
+}
+#section-b {
+   padding: 2em 1em 1em;
+}
+#section-b ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+#section-b .li {
+   margin-bottom: 1em;
+   background: #fff;
+   color: #333;
+}
 
+.card-content {
+   padding: 1.5em;
 }
-#main{
+#section-c {
+   background: #fff;
+   color: #333;
+   padding: 2em;
+}
+#section-d .box{
+   padding: 2em;
+   color: #fff;
+}
+#section-d .box:first-child {
+   background: #2690d4;
+}
+#main-footer {
+   padding: 2em;
+   background: #000;
+   color: #fff;
+   text-align: center;
+}
+#main-footer a{
+   background: #2690d4;
+   text-decoration: none;
+}
+@media(min-width: 800px){
+   body{
 
-}
-section{
-
-}
-section-a {
-
-}
-section-b {
-   
-}
-section-c {
-   
-}
-section-d {
-   
-}
-footer {
-
-}
-footer #main-footer {
-
+   }
+   .grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+   }
+   .content-wrap,
+   #section-b ul {
+      grid-column: 2/4;
+   }
+   .smaller-font {
+      font-size: 0.85em;
+      text-align: left;
+      padding: 0;
+   }
+   #section-b ul {
+      display: flex;
+      justify-content: space-around;
+   }
+   #section-b li {
+      width: 23%;
+   }
+   #section-d .box {
+      grid-column: span 2; 
+   }
+   .footer-grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+   }
 }

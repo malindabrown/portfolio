@@ -11,8 +11,8 @@ body {
 .grid {
    display: grid;
 }
-.main-img {
-   background: #000;
+div .main-img {
+   display:none;
 }
 .main-img img, .imgs img {
    width: 100%;
@@ -34,6 +34,9 @@ body {
    .container {
       max-width: 1000px;
    }
+   .main-img {
+    visibility: visible;
+ }
    .imgs{
      grid-template-columns: repeat(5, 1fr); 
      grid-template-rows: auto;
