@@ -2,6 +2,7 @@ body {
    /* font-family: "abril-fatface", "Ostrich Sans Rounded Medium", "Ostrich Sans", "Ostrich Sans Black", "Ostrich Sans Bold", "Ostrich Sans Medium", "Ostrich Sans Light", "Ostrich Sans Heavy"; */
    margin: 0;
    padding: 0;
+   Background: #181818;
    
 }
 .container {
@@ -12,7 +13,6 @@ body {
    display: grid;
 }
 div .main-img {
-   display:none;
 }
 .main-img img, .imgs img {
    width: 100%;
